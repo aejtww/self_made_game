@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="introduction">
+            <h1>Welcome to the Game!</h1>
+            <p>Use the left and right arrow keys to move the player.</p>
+            <p>Collect positive items to increase your score.</p>
+            <p>Avoid negative items or the game will be over.</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+        <div id="score" style="display: none;">Score    : 0</div>
+        <div id="test"></div>
+        <div id="game-over" style="display: none;">
+            Game Over!
+            <button id="restart-btn">Restart</button>
+            <button id="home-btn">Back to home</button>
+        </div>
+        <div id="survived-time" style="display: none">Survived  : 0s</div>
+        <div id="pause" style="display: none;">
+            Pause
+            <p>press 's' or 'esc' to resume</p>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <audio id="bgm" loop>
+            <source src="/sound/bgm/game-music-loop-12-147170.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="scored">
+            <source src="/sound/scored/mixkit-arcade-retro-changing-tab-206.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="hit">
+            <source src="/sound/hit/mixkit-electronic-retro-block-hit-2185.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="/function/function.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

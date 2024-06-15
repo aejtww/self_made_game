@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+#introduction {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    color: black;
+    z-index: 1;
+}
+
+#introduction h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+
+#introduction p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#introduction button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+#survived-time {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 20px;
+}
+
+/*debug*/
+#test {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 20px;
+}
+/*debug*/
+
+#pause {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    background-color: #f0f0f0;
+    color: black;
+    border: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+}
+
+#pause p {
+    font-size: 20px;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: red;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+}
+
+#game-over button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    z-index: 1;
+}
